@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+/* =======================common styles============= */
+.btn-style{
+    font-size: 1.2rem;
+    padding: 18px 35px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: red;
+}
+/* =======================common styles============= */
+
+header {
+  background-color: #FFF8F3;
+  background-image: url(../images/developer.png), url(../images/header_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 200px;
+  height: 150px;
+}
+.nav-title {
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+.nav-title span {
+  color: red;
+}
+nav .nav-links {
+  display: flex;
+  gap: 30px;
+  margin-right: 10px;
+  align-items: center;
+}
+nav .nav-links li a{
+  font-size: 1.5rem;
+  display: inline;
+}
+
+/* ===========nav section end========== */
+
+.banner-section {
+  margin-left: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.banner-content {
+    align-items: center;
+  h4 {
+    font-size: 2.5rem;
+    margin-top: 50px;
+  }
+  h1 {
+    font-size: 4.5em;
+    margin-top: 60px;
+  }
+  p{
+    font-size: 1.2rem;
+    margin-top: 50px;
+  }
+  .banner-button{
+    margin-top: 30px;
+  }
+}
+
+img {
+  height: 620px;
+  width: 550px;
+}
