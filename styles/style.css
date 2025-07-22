@@ -8,18 +8,18 @@
 }
 
 /* =======================common styles============= */
-.btn-style{
-    font-size: 1.2rem;
-    padding: 18px 35px;
-    border-radius: 8px;
-    border: none;
-    color: white;
-    background-color: red;
+.btn-style {
+  font-size: 1.2rem;
+  padding: 18px 35px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background-color: red;
 }
 /* =======================common styles============= */
 
 header {
-  background-color: #FFF8F3;
+  background-color: #fff8f3;
   background-image: url(../images/developer.png), url(../images/header_bg.png);
   background-repeat: no-repeat;
   background-position: top left, bottom right;
@@ -44,7 +44,7 @@ nav .nav-links {
   margin-right: 10px;
   align-items: center;
 }
-nav .nav-links li a{
+nav .nav-links li a {
   font-size: 1.5rem;
   display: inline;
 }
@@ -57,25 +57,110 @@ nav .nav-links li a{
   justify-content: space-between;
 }
 .banner-content {
-    align-items: center;
+  align-items: center;
   h4 {
     font-size: 2.5rem;
     margin-top: 50px;
   }
   h1 {
-    font-size: 4.5em;
+    font-size: 4.5rem;
     margin-top: 60px;
   }
-  p{
+  p {
     font-size: 1.2rem;
     margin-top: 50px;
   }
-  .banner-button{
+  .banner-button {
     margin-top: 30px;
   }
 }
 
-img {
+.banner-image {
   height: 620px;
   width: 550px;
+}
+
+/* ================= responsive designe =================== */
+@media screen and (max-width: 300px) {
+  .btn-style {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+  header {
+    background-image: none;
+  }
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 400px;
+  }
+  .nav-title {
+    font-size: 1.8rem;
+  }
+  nav .nav-links {
+    flex-direction: column;
+    margin-top: 90px;
+  }
+
+  .banner-section {
+    margin: 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .banner-content {
+    text-align: center;
+    .banner-button {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+    h4 {
+      font-size: 1.5rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-top: 60px;
+    }
+  }
+  .banner-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  header {
+    background-image: none;
+  }
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 400px;
+  }
+  nav .nav-links {
+    flex-direction: column;
+    margin-top: 90px;
+  }
+
+  .banner-section {
+    margin: 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .banner-content {
+    text-align: center;
+    .banner-button {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+  }
+  .banner-image {
+    width: 100%;
+    height: auto;
+  }
 }
